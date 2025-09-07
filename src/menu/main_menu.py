@@ -147,7 +147,9 @@ class MainMenu:
                             # Se não houver jogador ativo, mostra a tela de seleção de perfil
                             profile_screen = ProfileScreen(self.game)
                             if not profile_screen.run():
-                                return  # Usuário cancelou
+                                # Usuário cancelou a seleção de perfil, não faz nada
+                                return True
+                            # Se chegou aqui, um perfil foi selecionado, então continua para o jogo
                         self.next_state = "GAME"
                     elif self.options[self.selected_option] == "Trocar Jogador":
                         profile_screen = ProfileScreen(self.game)

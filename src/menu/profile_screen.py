@@ -99,7 +99,7 @@ class ProfileScreen:
                             self.input_active = False
                             self.input_text = ""
                         else:
-                            return True
+                            return False  # Retorna False para indicar que nenhum perfil foi selecionado
                     
                     # Navegação pelo teclado
                     if not self.input_active:
@@ -137,7 +137,7 @@ class ProfileScreen:
                             
                         # Verifica clique no botão de voltar
                         if self.back_button.collidepoint(event.pos):
-                            return True
+                            return False  # Retorna False para indicar que nenhum perfil foi selecionado
                             
                         # Verifica clique nos itens da lista
                         for i, profile in enumerate(self.profiles):

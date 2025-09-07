@@ -426,6 +426,7 @@ class Game:
             if event.type == pg.KEYDOWN:
                 # Tecla ESC: Retorna ao menu principal
                 if event.key == pg.K_ESCAPE:
+                    self.cleanup_game()
                     self.state = "MENU"
                     
                 # Barra de ESPAÇO: Dispara poção
@@ -1159,5 +1160,25 @@ class Game:
     def change_state(self, new_state):
         self.state = new_state
 
+    def cleanup_game(self):
+        """Limpa o estado do jogo ao retornar para o menu."""
+        # Limpa todos os sprites e grupos
+        self.all_sprites.empty()
+        self.projectiles.empty()
+        self.items.empty()
+        
+        # Reseta o jogador
+        self.player = None
+        
+        # Reseta o estado do jogo
+        self.score = 0
+        self.level = 1
+        self.is_game_over = False
+        self.level_complete = False
+        
+        # Para a música do jogo e volta para a música do menu
+        self._play_background_music('menu')
+
     def quit(self):
+        """Encerra o jogo de forma limpa."""
         self.running = False
