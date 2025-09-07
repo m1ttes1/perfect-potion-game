@@ -25,13 +25,11 @@ No mundo mágico de **Perfect Potion**, você assume o papel de um alquimista ap
 - 🎨 Gráficos coloridos e efeitos visuais impressionantes
 - 🎮 Controles simples e intuitivos
 
-## 🛠️ Como Jogar
-
 ## 🚀 Como Jogar
 
 ### 🎮 Controles
 - **Setas** ou **WASD**: Movimentação do personagem
-- **Espaço** ou **Clique Esquerdo**: Atirar poções
+- **Espaço** ou **Clique Esquerdo**: Atirar(beta)
 - **ESC**: Pausar o jogo/Voltar ao menu
 - **R**: Reiniciar o jogo (na tela de game over)
 
@@ -58,19 +56,6 @@ No mundo mágico de **Perfect Potion**, você assume o papel de um alquimista ap
    ```bash
    python main.py
    ```
-
-### 🎮 Controles
-- **Setas** ou **WASD**: Movimentação do personagem
-- **Espaço** ou **Clique Esquerdo**: Atirar poções
-- **ESC**: Pausar o jogo/Voltar ao menu
-- **R**: Reiniciar o jogo (na tela de game over)
-
-## 🏆 Sistema de Pontuação
-
-- **Acertos em sequência**: Aumenta o multiplicador de pontos
-- **Itens raros**: Valem mais pontos
-- **Níveis completos**: Bônus de pontos baseado no tempo
-- **Destaque no ranking**: Seja o melhor alquimista!
 
 ## 🎨 Desenvolvimento
 
