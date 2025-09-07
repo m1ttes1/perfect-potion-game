@@ -108,7 +108,7 @@ perfect-potion-game/
 **Aluno:** Victor Mittestainer  
 **RU:** 3655738  
 **Curso:** Análise e Desenvolvimento de Sistemas - UNINTER  
-**Disciplina:** Programação de Jogos Digitais
+**Disciplina:**  Linguagem de Programação Aplicada
 
 Desenvolvido como trabalho prático para a UNINTER.
 
