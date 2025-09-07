@@ -48,6 +48,15 @@ Desktop.ini
 # Arquivos de cache
 .cache/
 
+# Arquivos de backup
+backup_*.zip
+backups/
+assets/backups/
+
+# Arquivos de teste temporários
+simple_sound_test.py
+test_sounds.py
+
 # Arquivos temporários
 *.tmp
 *.bak
