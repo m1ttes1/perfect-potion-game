@@ -1,10 +1,20 @@
 # Perfect Potion 🧪✨
 
-Bem-vindo ao **Perfect Potion** - Um jogo de coleta e combinação de ingredientes mágicos para criar poções poderosas!
+Bem-vindo ao **Perfect Potion** - Um jogo de alquimia onde você coleta ingredientes mágicos e combina-os para criar poções poderosas! Desenvolvido com Python e Pygame.
+
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Pygame](https://img.shields.io/badge/pygame-2.6.1-green.svg)](https://www.pygame.org/)
+
+![Perfect Potion Screenshot](assets/images/menu/menu_background.jpg)
 
 ## 🎮 Sobre o Jogo
 
-No mundo mágico de **Perfect Potion**, você é um aprendiz de alquimista que precisa coletar ingredientes na ordem correta para criar poções mágicas. Mas cuidado! Coletar os itens fora de ordem pode resultar em poções explosivas!
+No mundo mágico de **Perfect Potion**, você assume o papel de um alquimista aprendiz que deve coletar ingredientes na ordem correta para criar poções mágicas. Cada nível apresenta uma receita única que deve ser seguida à risca. Cuidado! Coletar os itens fora de ordem pode resultar em poções explosivas e prejudicar sua jornada.
+
+### Objetivo
+- Colete ingredientes na ordem correta para completar as receitas de poções
+- Avance por níveis cada vez mais desafiadores
+- Alcance a maior pontuação possível e entre no ranking dos melhores alquimistas
 
 ### Características Principais
 
@@ -17,24 +27,39 @@ No mundo mágico de **Perfect Potion**, você é um aprendiz de alquimista que p
 
 ## 🛠️ Como Jogar
 
-### Requisitos do Sistema
+## 🚀 Como Jogar
+
+### 🎮 Controles
+- **Setas** ou **WASD**: Movimentação do personagem
+- **Espaço** ou **Clique Esquerdo**: Atirar poções
+- **ESC**: Pausar o jogo/Voltar ao menu
+- **R**: Reiniciar o jogo (na tela de game over)
+
+### 📋 Requisitos do Sistema
 - Python 3.8 ou superior
 - Pygame 2.6.1
+- 2GB de RAM
+- Placa de vídeo compatível com OpenGL
 
-### Instalação
+### 🛠️ Instalação
 
-1. Clone este repositório:
+1. **Clone o repositório**:
    ```bash
-   git clone [URL_DO_REPOSITÓRIO]
-   cd Entrega_trabalho_PP
+   git clone https://github.com/m1ttes1/perfect-potion-game.git
+   cd perfect-potion-game
    ```
 
-2. Instale as dependências:
+2. **Instale as dependências**:
    ```bash
    pip install -r requirements.txt
    ```
 
-### Controles
+3. **Execute o jogo**:
+   ```bash
+   python main.py
+   ```
+
+### 🎮 Controles
 - **Setas** ou **WASD**: Movimentação do personagem
 - **Espaço** ou **Clique Esquerdo**: Atirar poções
 - **ESC**: Pausar o jogo/Voltar ao menu
@@ -51,29 +76,47 @@ No mundo mágico de **Perfect Potion**, você é um aprendiz de alquimista que p
 
 Este jogo foi desenvolvido como parte de um trabalho acadêmico para a UNINTER, utilizando Python e Pygame. O código está organizado de forma modular para facilitar a manutenção e expansão.
 
-### Estrutura de Arquivos
+## 🏆 Sistema de Pontuação
 
-- `main.py`: Ponto de entrada do jogo
-- `src/`: Código-fonte principal
-  - `game.py`: Lógica principal do jogo
-  - `assets/`: Recursos como imagens e sons
-  - `items/`: Itens e poções do jogo
-  - `data/`: Configurações e banco de dados
-- `requirements.txt`: Dependências do projeto
+- **Acertos em sequência**: Aumenta o multiplicador de pontos
+- **Itens raros**: Valem mais pontos
+- **Níveis completos**: Bônus de pontos baseado no tempo
+- **Destaque no ranking**: Seja o melhor alquimista!
 
-## 📝 Licença
+## 🖥️ Estrutura do Projeto
 
-Este projeto é para fins educacionais. Sinta-se à vontade para usá-lo como base para seus próprios projetos!
+```
+perfect-potion-game/
+├── assets/              # Recursos do jogo (imagens, sons, fontes)
+├── src/                 # Código-fonte do jogo
+│   ├── data/            # Configurações e banco de dados
+│   ├── items/           # Itens do jogo (ingredientes, poções, bombas)
+│   ├── menu/            # Telas do jogo (menu, ranking, etc)
+│   ├── utils/           # Utilitários e ferramentas
+│   ├── database.py      # Gerenciamento do banco de dados
+│   ├── game.py          # Classe principal do jogo
+│   ├── player.py        # Classe do jogador
+│   └── settings.py      # Configurações do jogo
+├── .gitignore
+├── main.py              # Ponto de entrada do jogo
+├── README.md            # Este arquivo
+└── requirements.txt     # Dependências do projeto
+```
 
 ## 👥 Créditos
 
 **Aluno:** Victor Mittestainer  
 **RU:** 3655738  
 **Curso:** Análise e Desenvolvimento de Sistemas - UNINTER  
-**Disciplina:** Programação de Jogos Digitais (ou outra disciplina relacionada)
+**Disciplina:** Programação de Jogos Digitais
 
 Desenvolvido como trabalho prático para a UNINTER.
 
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
 ---
 
-Divirta-se jogando **Perfect Potion**! Se encontrar algum bug ou tiver sugestões, fique à vontade para abrir uma issue no repositório. 🚀
+🎮 Divirta-se jogando **Perfect Potion**! Se encontrar algum bug ou tiver sugestões, sinta-se à vontade para abrir uma [issue](https://github.com/m1ttes1/perfect-potion-game/issues) no repositório. 🚀
+
