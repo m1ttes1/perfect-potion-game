@@ -1,0 +1,55 @@
+# Arquivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Banco de dados SQLite
+*.db
+*.sqlite3
+
+# Arquivos de ambiente
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Arquivos do VS Code
+.vscode/
+
+# Arquivos do PyCharm
+.idea/
+
+# Arquivos do Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Arquivos de log
+*.log
+
+# Arquivos de cache
+.cache/
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.swp
+*~
