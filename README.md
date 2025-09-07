@@ -4,12 +4,21 @@ Bem-vindo ao **Perfect Potion** - Um jogo de alquimia onde você coleta ingredie
 
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Pygame](https://img.shields.io/badge/pygame-2.6.1-green.svg)](https://www.pygame.org/)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/m1ttes1/perfect-potion-game)](https://github.com/m1ttes1/perfect-potion-game/releases)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ![Perfect Potion Screenshot](assets/images/menu/menu_background.jpg)
+
+> **Nota de Versão 1.3**: Corrigidos bugs no menu e adicionados efeitos sonoros!
 
 ## 🎮 Sobre o Jogo
 
 No mundo mágico de **Perfect Potion**, você assume o papel de um alquimista aprendiz que deve coletar ingredientes na ordem correta para criar poções mágicas. Cada nível apresenta uma receita única que deve ser seguida à risca. Cuidado! Coletar os itens fora de ordem pode resultar em poções explosivas e prejudicar sua jornada.
+
+### 🎯 Destaques da Versão 1.3
+-🎵 Adicionados efeitos sonoros para ações do jogo
+- 🎮 Melhorias na jogabilidade e experiência do usuário
+- 🐛 Diversas correções de bugs e otimizações
 
 ### Objetivo
 - Colete ingredientes na ordem correta para completar as receitas de poções
@@ -61,6 +70,19 @@ No mundo mágico de **Perfect Potion**, você assume o papel de um alquimista ap
 
 Este jogo foi desenvolvido como parte de um trabalho acadêmico para a UNINTER, utilizando Python e Pygame. O código está organizado de forma modular para facilitar a manutenção e expansão.
 
+### 🛠️ Ferramentas de Desenvolvimento
+- `generate_sounds.py`: Gera efeitos sonoros personalizados para o jogo
+- `find_unused_files.py`: Identifica arquivos não utilizados no projeto
+- `manage_db.py`: Utilitário para gerenciar o banco de dados do jogo
+- `clear_ranking.py`: Limpa o ranking de pontuações
+
+### 🔍 Estrutura do Código
+O jogo segue uma arquitetura baseada em componentes, com separação clara entre:
+- **Lógica do jogo** (`game.py`)
+- **Interface do usuário** (pasta `menu/`)
+- **Gerenciamento de dados** (`database.py`)
+- **Elementos do jogo** (pastas `items/`, `player/`, etc.)
+
 ## 🏆 Sistema de Pontuação
 
 - **Acertos em sequência**: Aumenta o multiplicador de pontos
@@ -96,6 +118,16 @@ perfect-potion-game/
 **Disciplina:**  Linguagem de Programação Aplicada
 
 Desenvolvido como trabalho prático para a UNINTER.
+
+## 🤝 Como Contribuir
+
+Contribuições são bem-vindas! Siga estes passos:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Faça commit das alterações (`git commit -m 'Add some AmazingFeature'`)
+4. Faça push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
 ## 📄 Licença
 
